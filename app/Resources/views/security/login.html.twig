@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+   login
+{% endblock%}
+{% block body %}
+<form action="{{ path('login') }}" method="POST" class="form-signin">
+<div class="col-md-offset-5 col-md-3" style="margin:70px 0 0 -30px">
+    <div class="form-login">
+        <h4>Please Sign In</h4>
+        <input type="text" id="_username" name="_username" class="form-control input-sm chat-input" placeholder="username">
+        <br>
+        <input type="password" id="_password" name="_password" class="form-control input-sm chat-input" placeholder="password">
+        <br>
+        <div class="wrapper">
+            <span class="group-btn">
+                <input type="submit" class="btn btn-primary btn-md" name="submit" value='Sign In'>
+            </span>
+        </div>
+    </div>
+</div></form>
+{% endblock %}

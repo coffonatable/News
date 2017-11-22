@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    edit
+{% endblock title %}
+{% block body %}
+    <a class="btn btn-default" href="/news">Back to News</a>
+    <hr>
+    <h2 class="page-header">Edit News</h2>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+{% endblock body %}

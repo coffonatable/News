@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <h1> Welcome in News Site{% if app.user %} <strong style="color:#D4AF37">{{ app.user.username }}</strong>{% endif %}!</h1>
+{% endblock %}
+
